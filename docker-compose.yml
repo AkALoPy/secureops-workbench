@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: secureops-postgres
+    environment:
+      POSTGRES_DB: secureops
+      POSTGRES_USER: secureops
+      POSTGRES_PASSWORD: secureops
+    ports:
+      - "5432:5432"
+    volumes:
+      - secureops-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  secureops-postgres-data:
