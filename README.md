@@ -1,5 +1,5 @@
 # SecureOps Workbench
-SecureOps Workbench is a local-first security workflow app that ingests events, runs detections, generates alerts, and supports incident tracking with evidence packaging and report export.
+SecureOps Workbench is a local-first cyber security workflow app that ingests events, runs detections, generates alerts, and supports incident tracking with evidence packaging and report export.
 
 ## Alerts
 <img width="1173" height="832" alt="Alerts" src="https://github.com/AkALoPy/secureops-workbench/blob/master/screenshots/Alerts.png" />
