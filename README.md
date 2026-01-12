@@ -25,9 +25,7 @@ SecureOps Workbench is a local-first cyber security workflow app that ingests ev
 
 
 
-
-
-This repo is intended for portfolio and learning use
+This repo is intended for cyber security engineers and continued learning use.
 
 ## What it does
 
@@ -41,7 +39,7 @@ This repo is intended for portfolio and learning use
 
 - Backend: FastAPI + SQLModel
 - Frontend: Vite + React + TypeScript
-- Storage: local SQLite (development)
+- Storage: local SQLite (development) + Docker
 - Optional connector: AWS CloudTrail sync for recent events
 
 ## Prerequisites
@@ -83,6 +81,29 @@ npm run dev
 
 ## Frontend dev server typically runs at:
 http://127.0.0.1:5173
+
+# Run with Docker (Postgres)
+
+This project includes a `docker-compose.yml` for local Postgres.
+
+### Prerequisites
+- Docker Desktop
+- (Optional) psql if you want to inspect the DB locally
+
+### 1) Configure environment variables
+Copy the example env file and set a local password:
+
+```bash
+cp .env.example .env
+# edit .env and set POSTGRES_PASSWORD
+```
+
+## Start Postgres
+```bash
+docker compose up -d postgres
+docker compose ps
+```
+
 
 ## API authentication
 
